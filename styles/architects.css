@@ -14,6 +14,7 @@
     font-size: 1.8rem;
     font-weight: 700;
     color: #131313;
+    margin-bottom: 20px;
 }
 .btn-primary{
     border-radius: 8px;
@@ -138,13 +139,31 @@ main{
     color:  #727272;
     font-size: 0.8rem;
 }
+.fact{
+    margin-top: 80px;
+}
+/* sponsors css */
+.sponsors{
+    margin-top: 80px;
+    text-align: center;
+}
+.sponsors-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 25px;
+}
+.sponsors-images img{
+    width: 90px;
+}
 /* media query */
 /* small devices media query */
 @media screen and (max-width: 576px){
     header{
         padding: 20px;
     }
-    nav{
+    nav, .sponsors-images{
         flex-direction: column;
     }
     nav > ul{
@@ -177,5 +196,13 @@ main{
     }
     nav > ul, .features-content{
         margin-top: 20px;
+    }
+    .facts-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .fact{
+        padding: 30px;
     }
 }
