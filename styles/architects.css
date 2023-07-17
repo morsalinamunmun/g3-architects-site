@@ -9,3 +9,47 @@
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+/* header css styles */
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 30px 200px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav > ul{
+    display: flex;
+    gap: 40px;
+
+}
+nav li, a{
+    /* margin-right: 30px;(jnkar) nav li*/
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #424242;
+    font-weight: 500;
+}
+.nav-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+/* banner css styles */
+.banner-content{
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-title{
+    color: #131313;
+    font-size: 55px;
+    font-weight: 700;
+}
+.banner-descripton{
+    color:  #727272;
+    font-size: 15px;
+    line-height: 20px;
+}
