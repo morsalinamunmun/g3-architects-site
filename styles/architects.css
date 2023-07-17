@@ -1,18 +1,30 @@
 /* work sans google font link */
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;600&family=Lato:wght@400;700;900&family=Noto+Sans+Bengali:wght@400;500;600&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400;1,800&family=Poppins:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+/* shared css */
 
 *{
-    font-family: 'Hind', sans-serif;
     font-family: 'Lato', sans-serif;
-    font-family: 'Noto Sans Bengali', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.btn-primary{
+    border-radius: 8px;
+    color: 1.3rem;
+    background-color: #FF900E;
+    padding: 15px 20px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
 }
 /* header css styles */
 header{
     background-color: rgba(255, 144, 14, 0.10);
-    padding: 30px 200px;
+    padding: 50px 200px;
 }
 nav{
     display: flex;
@@ -21,35 +33,66 @@ nav{
 }
 nav > ul{
     display: flex;
-    gap: 40px;
-
+}
+nav li{
+    list-style: none;
+    font-size: 1rem;
+    margin-right: 30px;
+    font-weight: 500;
 }
 nav li, a{
     /* margin-right: 30px;(jnkar) nav li*/
-    list-style: none;
     text-decoration: none;
-    font-size: 1rem;
     color: #424242;
-    font-weight: 500;
+    
 }
 .nav-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: #131313;
 }
 /* banner css styles */
+.content{
+    display: flex;
+    justify-content: center;
+}
 .banner-content{
-    width: 800px;
     text-align: center;
-    margin: 0 auto;
+    margin: 30px 0px;
 }
 .banner-title{
     color: #131313;
-    font-size: 55px;
+    font-size: 2.8rem;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 .banner-descripton{
     color:  #727272;
-    font-size: 15px;
     line-height: 20px;
+}
+.banner img{
+    width: 100%;
+}
+@media screen and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav > ul{
+        margin-top: 20px;
+    }
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 30px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav > ul{
+        margin-top: 20px;
+    }
 }
