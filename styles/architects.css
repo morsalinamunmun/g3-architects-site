@@ -47,7 +47,7 @@ nav li, a{
     
 }
 .nav-title{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #131313;
 }
@@ -83,6 +83,44 @@ nav li, a{
     nav > ul{
         margin-top: 20px;
     }
+}
+/* main */
+main{
+    max-width: 880px;
+    margin: 0 auto;
+}
+/* features css */
+.features-container{
+    display: flex;
+    align-items: center;
+}
+.features-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9rem;
+}
+.features-images img{
+    width: 100%;
+}
+.features-content{
+    width: 75%;
+    padding: 0px 50px;
+}
+.features-content p{
+    color: #727272;
+    font-size: 0.8rem; 
+}
+.features-title{
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+.quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
 }
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px){
