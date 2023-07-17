@@ -10,6 +10,11 @@
     margin: 0px;
     padding: 0px;
 }
+.section-title{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #131313;
+}
 .btn-primary{
     border-radius: 8px;
     color: 1.3rem;
@@ -46,11 +51,7 @@ nav li, a{
     color: #424242;
     
 }
-.nav-title{
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #131313;
-}
+
 /* banner css styles */
 .content{
     display: flex;
@@ -112,6 +113,33 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+/* facts css */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.fact-description{
+    font-size: 0.8rem;
+    color: #727272;
+}
+.facts-card-container .card{
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+}
+.facts-card-container .card-stats{
+    font-size: 1.9rem;
+    color: #424242;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    color:  #727272;
+    font-size: 0.8rem;
+}
+/* media query */
+/* small devices media query */
 @media screen and (max-width: 576px){
     header{
         padding: 20px;
@@ -130,6 +158,13 @@ main{
     }
     .features-content{
         padding: 0px 20px;
+    }
+    .facts-card-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .fact{
+       padding: 0px 50px;
     }
 }
 /* tablet or medium devices */
