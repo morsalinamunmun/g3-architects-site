@@ -114,6 +114,50 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+/* experience and features css  */
+.experience{
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+.experience-content {
+    width: 80%;
+}
+.experience-content p{
+    margin-bottom: 30px;
+}
+.experience-content .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.experience-img img{
+    width: 100%;
+    height: 80%;
+    margin-left: 20px;
+}
+.card{
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.ten-years{
+    border-radius: 5px;
+    background: #FF900E;
+    color: #FFF;
+    width: 150px;
+    padding: 30px;
+    position: relative;
+    bottom: 60px;
+}
+.ten-years h2{
+    font-size: 1.8rem;
+    margin: 0;
+}
+.ten-years p{
+    text-align: center;
+}
 /* facts css */
 .facts-card-container{
     display: flex;
@@ -169,6 +213,16 @@ main{
     nav > ul{
         margin-top: 20px;
     }
+    .experience{
+        flex-direction: column;
+    }
+    .experience-content{
+        margin-left: 20px;
+    }
+    .experience-img img{
+        width: 90%;
+        height: auto;
+    }
     .features-container{
         flex-direction: column;
     }
@@ -181,18 +235,27 @@ main{
     .facts-card-container{
         flex-direction: column;
         gap: 20px;
+        align-items: center;
     }
     .fact{
        padding: 0px 50px;
     }
+
 }
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px){
     header{
         padding: 30px;
     }
-    nav, .features-container{
+    nav, .features-container .experience{
         flex-direction: column;
+    }
+    .experience{
+        flex-direction: column;
+    }
+    .experience-img img{
+        width: 90%;
+        height: auto;
     }
     nav > ul, .features-content{
         margin-top: 20px;
